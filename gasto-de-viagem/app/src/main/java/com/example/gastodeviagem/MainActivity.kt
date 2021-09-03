@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun calculate() {
-        if(validationOK()) {
+        if (validationOK()) {
 
             val distance = editDistance.text.toString().toFloat()
             val price = editPrice.text.toString().toFloat()
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    private fun validationOK() : Boolean {
+    private fun validationOK(): Boolean {
         return (editDistance.text.toString() != ""
                 && editPrice.text.toString() != ""
                 && editAutonomy.text.toString() != "")
